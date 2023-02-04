@@ -1,9 +1,11 @@
 import AppRouter from './routes/AppRouter'
-import './App.css'
+import { GameProvider } from './contexts/game.context'
 
 function App() {
   return (
-    <AppRouter />
+    <GameProvider>
+      <AppRouter />
+    </GameProvider>
   )
 }
 
